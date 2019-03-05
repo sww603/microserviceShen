@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice/message-thrift-python-service/message-thrift-python-service.iml" filepath="$PROJECT_DIR$/microservice/message-thrift-python-service/message-thrift-python-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/message-thrift-service-api/message-thrift-service-api.iml" filepath="$PROJECT_DIR$/microservice/message-thrift-service-api/message-thrift-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/microServices.iml" filepath="$PROJECT_DIR$/microservice/microServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mrcroService.iml" filepath="$PROJECT_DIR$/.idea/mrcroService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/user-edge-service/user-edge-service.iml" filepath="$PROJECT_DIR$/microservice/user-edge-service/user-edge-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/user-edges-service.iml" filepath="$PROJECT_DIR$/microservice/user-edges-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/user-thrift-service/user-thrift-service.iml" filepath="$PROJECT_DIR$/microservice/user-thrift-service/user-thrift-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/user-thrift-service-api/user-thrift-service-api.iml" filepath="$PROJECT_DIR$/microservice/user-thrift-service-api/user-thrift-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/useredgeservice.iml" filepath="$PROJECT_DIR$/microservice/useredgeservice.iml" />
+    </modules>
+  </component>
+</project>

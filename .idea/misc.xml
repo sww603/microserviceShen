@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/user-edge-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/user-edge-service/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/microservice/api-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/course-dubbo-service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/course-dubbo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/course-edge-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/user-edge-service-client/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
