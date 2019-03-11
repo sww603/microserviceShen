@@ -1,6 +1,8 @@
 package thrift;
 
+import com.imooc.thrift.message.MessageService;
 import com.imooc.thrift.user.UserService;
+import org.apache.thrift.TServiceClient;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.TFramedTransport;
@@ -31,17 +33,30 @@ public class ServiceProvider {
 
     return getService(serverIp, serverPort, ServiceType.USER);
   }
-  public UserService.Client getService(String ip,int port,ServiceType serviceType) {
+
+  public MessageService.Client getMessageService() {
+    return getService(serverIp, serverPort, ServiceType.MESSAGE);
+  }
+
+  public <T> T getService(String ip, int port, ServiceType serviceType) {
     TSocket socket = new TSocket(serverIp, serverPort, 3000);
-    TTransport transport=new TFramedTransport(socket);
+    TTransport transport = new TFramedTransport(socket);
     try {
       transport.open();
     } catch (TTransportException e) {
       e.printStackTrace();
       return null;
     }
-    TProtocol protocol=new TBinaryProtocol(transport);
-    UserService.Client client=new UserService.Client(protocol);
-    return client;
+    TProtocol protocol = new TBinaryProtocol(transport);
+    TServiceClient result = null;
+    switch (serviceType) {
+      case USER:
+        result = new UserService.Client(protocol);
+        break;
+      case MESSAGE:
+        result = new MessageService.Client(protocol);
+        break;
+    }
+    return (T) result;
   }
 }
