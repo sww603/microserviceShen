@@ -7,10 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/microservice/microServices.iml" filepath="$PROJECT_DIR$/microservice/microServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mrcroService.iml" filepath="$PROJECT_DIR$/.idea/mrcroService.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice/user-edge-service/user-edge-service.iml" filepath="$PROJECT_DIR$/microservice/user-edge-service/user-edge-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice/user-edges-service.iml" filepath="$PROJECT_DIR$/microservice/user-edges-service.iml" />
+      <module fileurl="file://E:\study\microserviceShen\microservice\user-edges-service.iml" filepath="E:\study\microserviceShen\microservice\user-edges-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice/user-thrift-service/user-thrift-service.iml" filepath="$PROJECT_DIR$/microservice/user-thrift-service/user-thrift-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice/user-thrift-service-api/user-thrift-service-api.iml" filepath="$PROJECT_DIR$/microservice/user-thrift-service-api/user-thrift-service-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice/useredgeservice.iml" filepath="$PROJECT_DIR$/microservice/useredgeservice.iml" />
+      <module fileurl="file://E:\study\microserviceShen\microservice\useredgeservice.iml" filepath="E:\study\microserviceShen\microservice\useredgeservice.iml" />
     </modules>
   </component>
 </project>
