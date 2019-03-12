@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="message-thrift-service-api" />
         <module name="user-edge-service" />
+        <module name="user-edge-service-client" />
         <module name="user-thrift-service" />
         <module name="user-thrift-service-api" />
       </profile>
@@ -25,6 +26,7 @@
       <module name="user-edges-service" target="1.5" />
       <module name="user-thrift-service" target="1.7" />
       <module name="user-thrift-service-api" target="1.7" />
+      <module name="usere-dge-service-client" target="1.5" />
       <module name="useredgeservice" target="1.5" />
     </bytecodeTargetLevel>
   </component>

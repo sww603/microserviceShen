@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/microservice/pom.xml" />
         <option value="$PROJECT_DIR$/user-edge-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservice/user-edge-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/user-edge-service-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -15,7 +16,6 @@
         <option value="$PROJECT_DIR$/microservice/course-dubbo-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservice/course-edge-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservice/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice/user-edge-service-client/pom.xml" />
       </set>
     </option>
   </component>
