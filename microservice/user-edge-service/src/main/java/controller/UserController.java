@@ -10,10 +10,7 @@ import org.apache.tomcat.util.buf.HexUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import redis.RedisClient;
 import reponse.LoginResponse;
 import reponse.Reponse;
@@ -117,6 +114,13 @@ public class UserController {
 
     return Reponse.SUCCESS;
 
+  }
+
+  @RequestMapping(value="/authentication", method = RequestMethod.POST)
+  @ResponseBody
+  public UserDTO authentication(@RequestHeader("token") String token) {
+
+    return redisClient.get(token);
   }
 
   private String getToken() {

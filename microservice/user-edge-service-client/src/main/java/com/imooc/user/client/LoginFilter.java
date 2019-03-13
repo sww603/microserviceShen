@@ -4,7 +4,13 @@ package com.imooc.user.client;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.imooc.thrift.user.dto.UserDTO;
+import com.sun.org.apache.regexp.internal.RE;
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -17,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 /**
  * Created by sww_6 on 2019/3/12.
  */
@@ -43,18 +50,32 @@ public abstract class LoginFilter implements Filter {
                     }
                 }
             }
-            UserDTO userDTO = null;
-            if(userDTO==null) {
-                servletResponse.sendRedirect("http://www.mooc.com/user/login");
-                return;
-            }
-
         }
 
+        if (StringUtils.isNotBlank("token")) {
+            requestUserInfo(token);
+        }
     }
-    protected abstract String userEdgeServiceAddr();
 
-    protected abstract void login(HttpServletRequest request, HttpServletResponse response, UserDTO userDTO);
+    private UserDTO requestUserInfo(String token) {
+        String url = "http://www.imooc.com/user/authentication";
+
+        HttpClient client = new DefaultHttpClient();
+        HttpPost post = new HttpPost(url);
+        post.addHeader("token", token);
+
+        try {
+            HttpResponse response = client.execute(post);
+            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
+                return null;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
 
     public void destroy() {
 
