@@ -1,4 +1,4 @@
-package dto;
+package com.imooc.user.dto;
 
 import java.io.Serializable;
 

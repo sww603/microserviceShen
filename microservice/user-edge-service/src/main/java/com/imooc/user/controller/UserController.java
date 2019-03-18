@@ -1,7 +1,7 @@
-package controller;
+package com.imooc.user.controller;
 
 import com.imooc.thrift.user.UserInfo;
-import dto.UserDTO;
+import com.imooc.user.dto.UserDTO;
 import java.security.MessageDigest;
 import java.util.Random;
 import org.apache.commons.lang.StringUtils;
@@ -11,10 +11,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import redis.RedisClient;
-import reponse.LoginResponse;
-import reponse.Reponse;
-import thrift.ServiceProvider;
+import com.imooc.user.redis.RedisClient;
+import com.imooc.user.reponse.LoginResponse;
+import com.imooc.user.reponse.Reponse;
+import com.imooc.user.thrift.ServiceProvider;
 
 /**
  * Created by sww_6 on 2019/3/4.
@@ -27,7 +27,11 @@ public class UserController {
   private RedisClient redisClient;
   @Autowired
   private ServiceProvider serviceProvider;
+  @RequestMapping(value="/login", method = RequestMethod.GET)
 
+  public String login() {
+    return "login";
+  }
   public Reponse login(@RequestParam("username") String username,
       @RequestParam("password") String password) {
 

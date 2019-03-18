@@ -1,4 +1,4 @@
-package redis;
+package com.imooc.user.redis;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

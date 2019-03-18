@@ -1,4 +1,4 @@
-package thrift;
+package com.imooc.user.thrift;
 
 import com.imooc.thrift.message.MessageService;
 import com.imooc.thrift.user.UserService;

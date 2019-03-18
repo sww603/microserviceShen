@@ -1,4 +1,4 @@
-package reponse;
+package com.imooc.user.reponse;
 
 /**
  * Created by sww_6 on 2019/3/4.

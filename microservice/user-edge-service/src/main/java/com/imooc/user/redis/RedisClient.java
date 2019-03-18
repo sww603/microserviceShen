@@ -1,4 +1,4 @@
-package redis;
+package com.imooc.user.redis;
 
 import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;

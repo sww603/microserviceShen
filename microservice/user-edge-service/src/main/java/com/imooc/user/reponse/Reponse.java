@@ -1,4 +1,4 @@
-package reponse;
+package com.imooc.user.reponse;
 
 import java.io.Serializable;
 
